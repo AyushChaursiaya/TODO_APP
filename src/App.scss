@@ -1,0 +1,132 @@
+.app-container {
+    min-height: 100vh;
+    text-align: center;
+    padding: 1rem;
+    background-color: #e0f2f1;
+  
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #37474f;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  // Search Input
+  .search {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  
+    input {
+      border: 2px solid #37474f;
+      padding: 0.5rem;
+      width: 50%;
+      border-radius: 8px 0 0 8px;
+    }
+  
+    button {
+      background-color: #fbc02d;
+      padding: 0.5rem 1rem;
+      border: 2px solid #37474f;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #f9a825;
+      }
+    }
+  }
+  
+  // Add Task Input
+  .add-task {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  
+    input {
+      border: 2px solid #37474f;
+      padding: 0.5rem;
+      width: 50%;
+      border-radius: 8px 0 0 8px;
+    }
+  
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: 2px solid #37474f;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #388e3c;
+      }
+    }
+  }
+  
+  // Task List
+  .task-list {
+    margin-top: 1.5rem;
+    
+    .task {
+      display: flex;
+      margin: 0.5rem;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+  
+      &:hover {
+        transform: scale(1.02);
+      }
+  
+      &.done {
+        background-color: #cfd8dc;
+        text-decoration: line-through;
+        color: #607d8b;
+      }
+  
+      &.pending {
+        background-color: #ce93d8;
+        color: #4527a0;
+      }
+  
+      span {
+        font-size: 1.125rem;
+        font-weight: 500;
+      }
+  
+      .actions {
+        button {
+          padding: 0.5rem;
+          border-radius: 4px;
+          margin-left: 0.5rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+  
+          &.done {
+            background-color: #4caf50;
+            color: white;
+  
+            &:hover {
+              background-color: #388e3c;
+            }
+          }
+  
+          &.delete {
+            background-color: #e53935;
+            color: white;
+  
+            &:hover {
+              background-color: #c62828;
+            }
+          }
+        }
+      }
+    }
+  }
